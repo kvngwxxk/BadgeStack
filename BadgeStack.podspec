@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BadgeStack'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'BadgeStack is a UIKit extension for easy badge management in iOS apps.'
 
 # This description is used to generate tags and improve search results.
