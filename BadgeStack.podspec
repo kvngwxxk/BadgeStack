@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'BadgeStack'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of BadgeStack.'
+  s.summary          = 'BadgeStack is a UIKit extension for easy badge management in iOS apps.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+'BadgeStack is a versatile and lightweight UIKit extension that facilitates the easy integration and management of badge systems within your iOS applications. Utilize BadgeStack to dynamically add, arrange, and style badges with seamless layout handling, enhancing the visual feedback and user experience of your app with minimal setup and code complexity. Take control of your badge systems with BadgeStack.'
                        DESC
 
   s.homepage         = 'https://github.com/kvngwxxk/BadgeStack'
@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/kvngwxxk/BadgeStack.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'BadgeStack/Classes/**/*'
   

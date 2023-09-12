@@ -1,0 +1,22 @@
+{
+  "name": "BadgeStack",
+  "version": "0.1.0",
+  "summary": "A short description of BadgeStack.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/kvngwxxk/BadgeStack",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kvngwxxk": "kngwk.bsns@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/kvngwxxk/BadgeStack.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "BadgeStack/Classes/**/*"
+}
