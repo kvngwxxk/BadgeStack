@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.author           = { 'kvngwxxk' => 'kngwk.bsns@gmail.com' }
   s.source           = { :git => 'https://github.com/kvngwxxk/BadgeStack.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.swift_version = '5.0'
   s.ios.deployment_target = '13.0'
 
   s.source_files = 'BadgeStack/Classes/**/*'
