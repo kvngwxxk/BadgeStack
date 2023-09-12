@@ -37,10 +37,16 @@ public class BadgeContainerView: UIView {
     }
     
     public func addBadge(_ badge: Badge) {
-        addViewToStackView(badge)
+        if badge.isLastBadge {
+            addViewToStackView(badge, isLastBadge: true)
+        } else {
+            addViewToStackView(badge)
+        }
     }
     
-    private func addViewToStackView(_ view: UIView) {
+    private func addViewToStackView(_ view: UIView, isLastBadge: Bool = false) {
+        view.sizeToFit()
+        
         if mainStackView.arrangedSubviews.isEmpty {
             addNewSubStackView()
         }
@@ -57,13 +63,16 @@ public class BadgeContainerView: UIView {
         if stackViewWidth > currentStackView.frame.width {
             currentStackView.removeArrangedSubview(view)
             view.removeFromSuperview()
+            addDummyView(to: currentStackView)
             
             addNewSubStackView()
             addViewToStackView(view)
             
+        } else if isLastBadge {
             addDummyView(to: currentStackView)
         }
     }
+
     
     private func addNewSubStackView() {
         let newStackView = UIStackView()

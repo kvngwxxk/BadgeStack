@@ -15,12 +15,14 @@ public class Badge: UIView {
     public var badgeBackgroundColor: UIColor
     public var badgeFont: UIFont
     public var height: CGFloat = 40
+    public var isLastBadge = false
     
-    public init(text: String, textColor: UIColor, backgroundColor: UIColor, font: UIFont) {
+    public init(text: String, textColor: UIColor, backgroundColor: UIColor, font: UIFont, isLastBadge: Bool = false) {
         self.badgeText = text
         self.badgeTextColor = textColor
         self.badgeBackgroundColor = backgroundColor
         self.badgeFont = font
+        self.isLastBadge = isLastBadge
         
         super.init(frame: .zero)
         
